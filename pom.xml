@@ -301,6 +301,22 @@
                 </executions>
             </plugin>
         </plugins>
+        		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>com.contrastsecurity</groupId>
+					<artifactId>contrast-maven-plugin</artifactId>
+					<version>2.13-SNAPSHOT</version>
+					<configuration>
+					      <apiUrl>${env.CONTRAST__API__URL}</apiUrl>
+					      <username>${env.CONTRAST__API__USER_NAME}</username>
+					      <apiKey>${env.CONTRAST__API__API_KEY}</apiKey>
+					      <serviceKey>${env.CONTRAST__API__SERVICE_KEY}</serviceKey>
+					      <orgUuid>${env.CONTRAST__API__ORGANIZATION_ID}</orgUuid>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -317,6 +333,18 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-gpg-plugin</artifactId>
                     <version>${maven.gpg.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.contrastsecurity</groupId>
+                    <artifactId>contrast-maven-plugin</artifactId>
+                    <version>2.13-SNAPSHOT</version>
+                    <configuration>
+                        <apiUrl>${env.CONTRAST__API__URL}</apiUrl>
+                        <username>${env.CONTRAST__API__USER_NAME}</username>
+                        <apiKey>${env.CONTRAST__API__API_KEY}</apiKey>
+                        <serviceKey>${env.CONTRAST__API__SERVICE_KEY}</serviceKey>
+                        <orgUuid>${env.CONTRAST__API__ORGANIZATION_ID}</orgUuid>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
