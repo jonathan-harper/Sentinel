@@ -41,7 +41,7 @@ jobs:
         
       - name: Build and Run Contrast Scan
 #         working-directory: sentinel-dashboard
-        run: mvn --batch-mode -Pcontrast-scan verify
+        run: mvn --batch-mode -DskipTests -Pcontrast-scan verify
         env:
           CONTRAST__API__URL: https://teamserver-staging.contsec.com/Contrast/api
           CONTRAST__API__ORGANIZATION_ID: ${{ secrets.CONTRAST__API__ORGANIZATION_ID }}
