@@ -25,12 +25,12 @@ jobs:
           java-version: '11'
           distribution: 'adopt-hotspot'
 
-      - name: Checkout contrast-maven-plugin snapshot
-        uses: actions/checkout@v2
-        with:
-          repository: Contrast-Security-OSS/contrast-maven-plugin
-          ref: java-3292-scan
-          path: contrast-maven-plugin
+#       - name: Checkout contrast-maven-plugin snapshot
+#         uses: actions/checkout@v2
+#         with:
+#           repository: Contrast-Security-OSS/contrast-maven-plugin
+#           ref: java-3292-scan
+#           path: contrast-maven-plugin
 
       - name: Install contrast-maven-plugin snapshot
         working-directory: contrast-maven-plugin
