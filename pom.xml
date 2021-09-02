@@ -321,7 +321,7 @@
                 <plugin>
                     <groupId>com.contrastsecurity</groupId>
                     <artifactId>contrast-maven-plugin</artifactId>
-                    <version>2.13-SNAPSHOT</version>
+                    <version>2.13.1</version>
                     <configuration>
                         <apiUrl>${env.CONTRAST__API__URL}</apiUrl>
                         <username>${env.CONTRAST__API__USER_NAME}</username>
